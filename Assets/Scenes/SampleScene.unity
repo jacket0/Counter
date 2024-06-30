@@ -238,6 +238,7 @@ GameObject:
   - component: {fileID: 185193242}
   - component: {fileID: 185193241}
   - component: {fileID: 185193240}
+  - component: {fileID: 185193243}
   m_Layer: 5
   m_Name: Button (Legacy)
   m_TagString: Untagged
@@ -309,7 +310,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1689725618}
+      - m_Target: {fileID: 185193243}
         m_TargetAssemblyTypeName: Counter, Assembly-CSharp
         m_MethodName: StartCount
         m_Mode: 1
@@ -359,6 +360,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 185193238}
   m_CullTransparentMesh: 1
+--- !u!114 &185193243
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 185193238}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 50b3c8da0f802c347966d25aeb5d78b3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _counter: 0
+  _additionConst: 1
+  _output: {fileID: 1689725618}
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -608,12 +624,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 1689725614}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 50b3c8da0f802c347966d25aeb5d78b3, type: 3}
+  m_Script: {fileID: 11500000, guid: 6137bddedad751f4fa71d2d4c52f120b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _counter: 0
-  _additionConst: 1
-  _text: {fileID: 1689725616}
 --- !u!1 &1883311033
 GameObject:
   m_ObjectHideFlags: 0

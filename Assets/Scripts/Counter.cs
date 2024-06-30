@@ -7,7 +7,7 @@ public class Counter : MonoBehaviour
 {
 	[SerializeField] private float _counter = 0f;
 	[SerializeField] private float _additionConst = 1f;
-	[SerializeField] private Text _text;
+	[SerializeField] private OutputText _output;
 
 	private bool _IsCount = false;
 	private Coroutine _coroutine;
@@ -28,9 +28,9 @@ public class Counter : MonoBehaviour
 	{
 		var waitTime = new WaitForSecondsRealtime(_additionConst);
 
-		while (true) 
+		while (_IsCount) 
 		{
-			_text.text = Convert.ToString(++_counter);
+			_output.Output(++_counter);
 			yield return waitTime;
 		}
 	}
