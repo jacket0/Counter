@@ -372,9 +372,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 50b3c8da0f802c347966d25aeb5d78b3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _counter: 0
+  _value: 0
   _additionConst: 1
-  _output: {fileID: 1689725618}
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -627,6 +626,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6137bddedad751f4fa71d2d4c52f120b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _counter: {fileID: 185193243}
 --- !u!1 &1883311033
 GameObject:
   m_ObjectHideFlags: 0
