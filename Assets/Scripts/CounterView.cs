@@ -2,7 +2,8 @@ using System;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class OutputText : MonoBehaviour
+[RequireComponent(typeof(Text))]
+public class CounterView : MonoBehaviour
 {
 	private Text _text;
 

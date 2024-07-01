@@ -5,16 +5,16 @@ using UnityEngine.UI;
 
 public class Counter : MonoBehaviour
 {
-	[SerializeField] private float _counter = 0f;
+	[SerializeField] private float _value = 0f;
 	[SerializeField] private float _additionConst = 1f;
-	[SerializeField] private OutputText _output;
+	[SerializeField] private CounterView _output;
 
-	private bool _IsCount = false;
+	private bool _isCount = false;
 	private Coroutine _coroutine;
 
 	public void StartCount()
 	{
-		if (_IsCount = !_IsCount)
+		if (_isCount = !_isCount)
 		{
 			_coroutine = StartCoroutine(CountWithDelay());
 		}
@@ -28,9 +28,9 @@ public class Counter : MonoBehaviour
 	{
 		var waitTime = new WaitForSecondsRealtime(_additionConst);
 
-		while (_IsCount) 
+		while (_isCount) 
 		{
-			_output.Output(++_counter);
+			_output.Output(++_value);
 			yield return waitTime;
 		}
 	}
